@@ -1,0 +1,142 @@
+/* Footer section */
+footer {
+    background-color: #000000; /* Black background */
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    color: #ffffff; /* White text */
+    margin-top: 100px;
+    width: 100%;
+  }
+  
+  /* Footer header */
+  .footer-header {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the start and end of the container */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-header-title {
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 1.1rem; /* Increase font size slightly */
+  }
+  
+  .instalogo {
+    margin-right: 15px;
+    font-size: 30px;
+  }
+
+  /* Footer content */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Footer containers */
+  footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Footer columns */
+  footer-row {
+    display: flex;
+    flex: 1;
+  }
+  
+  footer-col {
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  .footer-col:not(:last-child) {
+    border-right: 1px solid #dee2e6;
+  }
+  
+  /* Footer titles */
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer links */
+  .footer-content a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content a:hover {
+    color: #ffffff; /* White text */
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgb(0, 0,grey);
+    color: white; /* White text */
+    height: 5rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Adjustments for mobile phones */
+    
+    /* Footer header */
+    .footer-header {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+      margin-bottom: 10px; /* Decrease bottom margin */
+    }
+    
+    .instalogo {
+      margin-right: 0; /* Remove right margin */
+      margin-top: 10px; /* Add top margin */
+    }
+  
+    /* Footer content */
+    .footer-content {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+    }
+    
+    /* Footer containers */
+    footer-container {
+      width: 100%; /* Make the container occupy full width */
+    }
+    
+    /* Footer columns */
+    footer-row {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+    }
+    
+    footer-col {
+      padding: 10px 0; /* Adjust padding */
+      text-align: center; /* Center align text */
+    }
+    
+    .footer-col:not(:last-child) {
+      border-right: none; /* Remove border */
+    }
+    
+    /* Footer titles */
+    .footer-title {
+      margin-bottom: 10px; /* Decrease bottom margin */
+    }
+    
+    /* Footer bottom */
+    .footer-bottom {
+      margin-top: 10px; /* Decrease top margin */
+      height: auto; /* Allow height to adjust based on content */
+    }
+  }
+  

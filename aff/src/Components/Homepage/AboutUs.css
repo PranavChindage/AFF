@@ -1,0 +1,65 @@
+.about-us-container {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+    margin-top: 20px; /* Add margin-top for spacing */
+  }
+  
+  .about-us-card {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Update box shadow for more depth */
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease; /* Add transition effect for transform and box-shadow */
+    max-width: 900px; /* Limit max width for better readability */
+    width: 90%; /* Ensure card takes most of the width */
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Add margin-top for spacing */
+  }
+  
+  .about-us-card:hover {
+    transform: translateY(-10px); /* Move the card up slightly on hover */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Add more pronounced shadow effect on hover */
+  }
+  
+  .about-us-card h2 {
+    margin-bottom: 20px; /* Increase margin-bottom for spacing */
+    font-size: 32px; /* Increase font size for heading */
+    color: #333333;
+  }
+  
+  .about-us-card p {
+    color: #666666;
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 20px; /* Increase margin-bottom for spacing */
+  }
+  
+  @media only screen and (max-width: 767px) {
+    /* Adjustments for mobile phones */
+  
+    .about-us-container {
+      margin-top: 10px; /* Decrease top margin for spacing */
+    }
+  
+    .about-us-card {
+      padding: 20px; /* Decrease padding */
+      border-radius: 10px; /* Decrease border radius */
+      width: 95%; /* Ensure card takes most of the width */
+      margin-top: 10px; /* Decrease top margin for spacing */
+    }
+  
+    .about-us-card:hover {
+      transform: none; /* Remove transform on hover */
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Reset box shadow on hover */
+    }
+  
+    .about-us-card h2 {
+      font-size: 28px; /* Decrease font size for heading */
+      margin-bottom: 15px; /* Decrease margin-bottom for spacing */
+    }
+  
+    .about-us-card p {
+      margin-bottom: 15px; /* Decrease margin-bottom for spacing */
+    }
+  }
+  

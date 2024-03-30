@@ -1,0 +1,110 @@
+.poster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  .poster-content {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease forwards;
+    margin-bottom: 0;
+    background-color: black;
+    width: 100%;
+    margin-top: 100px;
+
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .poster-title {
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .poster-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .poster-image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .poster-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 1s ease forwards;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .poster-container hr {
+    border: none;
+    border-top: 2px solid #000278;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    /* Adjustments for mobile phones */
+  
+    .poster-content {
+      margin-top: 50px; /* Decrease top margin */
+    }
+  
+    .poster-title {
+      font-size: 24px; /* Decrease font size for title */
+      padding: 8px 16px; /* Decrease padding for title */
+      margin-top: 20px; /* Decrease top margin */
+      margin-bottom: 20px; /* Decrease bottom margin */
+    }
+  
+    .poster-logo {
+      width: 40px; /* Decrease logo size */
+      height: 40px; /* Decrease logo size */
+      margin-right: 8px; /* Decrease right margin */
+    }
+  
+    .poster-image img {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Decrease shadow intensity */
+    }
+  
+    .poster-container hr {
+      margin-top: 20px; /* Decrease top margin */
+      margin-bottom: 20px; /* Decrease bottom margin */
+    }
+  }
+  

@@ -1,0 +1,155 @@
+/* Winners component CSS */
+
+/* Winners container */
+.winners-container {
+  padding: 20px 0;
+}
+
+/* Winners section */
+.details{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.winners-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+/* Winners section animation */
+.winners-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title styling */
+.winners-section h2 {
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center; /* Center the title */
+  font-weight: bold;
+}
+
+/* Image styling */
+.winners {
+  width: 80%; /* Make the image 100% width */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 200px;
+}
+
+.runnerups{
+  width: 80%; /* Make the image 100% width */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-left: 100px;
+  
+}
+
+/* Paragraph styling */
+.winners-section h3 {
+  font-size: 3rem;
+  color: #858383;
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+}
+
+/* Individual awards container */
+.individual-awards {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Individual award styling */
+.individual-award {
+  text-align: center;
+  margin: 0 10px; /* Decreased margin */
+}
+
+/* Individual award image styling */
+
+.goal-scorer{
+  width: 500px; /* Reduced image width */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.goal-keeper{
+  width: 500px; /* Reduced image width */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Adjustments for mobile phones and other small devices */
+  
+  .details {
+    margin: 20px; /* Decrease margin for details section */
+  }
+
+  .winners {
+    width: 100%; /* Make the image occupy full width */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    margin-bottom: 10px; /* Decrease bottom margin */
+    margin-top: 20px; /* Increase top margin */
+  }
+
+  .runnerups {
+    width: 100%; /* Make the image occupy full width */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    margin-bottom: 10px; /* Decrease bottom margin */
+    margin-top: 20px; /* Increase top margin */
+  }
+
+  .goal-scorer, .goal-keeper {
+    width: 300px; /* Adjust image width */
+    margin: 10px auto; /* Center the image horizontally with some margin */
+    margin-top: 20px; /* Increase top margin */
+    margin-bottom: 20px; /* Increase bottom margin */
+  }
+
+  .winners-section {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    margin-top: 50px; /* Adjust top margin */
+  }
+
+  .winners-section h2 {
+    font-size: 2.5rem; /* Decrease title font size */
+  }
+
+  .winners-section h3 {
+    font-size: 2rem; /* Decrease paragraph font size */
+  }
+
+  .individual-awards {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    margin-top: 50px; /* Adjust top margin */
+  }
+
+  .individual-award {
+    margin: 10px 0; /* Adjust margin */
+  }
+}

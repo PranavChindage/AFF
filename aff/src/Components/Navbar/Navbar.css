@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* adjust height as needed */
+  background-color: #000000; /* black background */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 200px; /* adjust width as needed */
+  height: auto;
+  mix-blend-mode: difference; /* make sure logo stands out against black background */
+}
+
+@media only screen and (max-width: 767px) {
+  /* Adjustments for mobile phones */
+
+  .navbar {
+    height: 100px; /* Decrease height for mobile devices */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .logo {
+    margin-top: 10px; /* Adjust margin for logo */
+  }
+
+  .logo-image {
+    width: 150px; /* Decrease width of logo for mobile devices */
+  }
+}
